@@ -67,6 +67,10 @@ Configure the JVM using variables and options in the WebLogic scripts and Manage
     export MW_HOME="/Users/ray/Oracle/wls12210"
     ```
 
+    ```important::
+       As best practice, you should not modify the *setDomainEnv.cmd|sh* file directly. Instead, you should create a *setUserOverrideslate.cmd|sh* file in the *domain_home/bin* folder. See `Customizing Server Parameters with the setUserOverridesLate Script <https://docs.oracle.com/en/middleware/fusion-middleware/12.2.1.3/wcedg/customizing-server-parameters-setuseroverrideslate-script.html#GUID-E74380A4-BDB0-4933-8884-8183D210F0F0>`_
+    ```
+
 1. Make sure `your-domain/bin/SetDomainEnv.sh` uses these memory settings:
 
     ```bash
